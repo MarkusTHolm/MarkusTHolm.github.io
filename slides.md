@@ -40,34 +40,6 @@ layout: cover
 <p> ICTAM 2024 </p>
 
 
-
-<LightOrDark>
-  <template #dark="props">
-    <img style="position:fixed; top:50px; left:50px; width:50px;;"src="/media/DTU/DTU_logo_white.png" v-bind="props" /> 
-  </template>
-  <template #light="props">
-    <img style="position:fixed; top:50px; left:50px; width:50px;" src="/media/DTU/DTU_logo_black.png" v-bind="props" />
-  </template>
-</LightOrDark>
-
-<LightOrDark>
-  <template #dark="props">
-    <img style="position:fixed; top:50px; right:50px; width:220px;" src="/media/DTU/Villum_white.png" v-bind="props" />
-  </template>
-  <template #light="props">
-    <img style="position:fixed; top:50px; right:50px; width:220px;" src="/media/DTU/Villum_black.png" v-bind="props" />
-  </template>
-</LightOrDark>
-
-<!-- <LightOrDark>
-  <template #dark="props">
-    <img style="position:fixed; bottom:70px; right:50px; width:100px; " src="media/DTU/ntop.png" v-bind="props" />
-  </template>
-  <template #light="props">
-    <img style="position:fixed; bottom:70px; right:50px; width:100px; filter:invert(1)" src="media/DTU/ntop.png" v-bind="props" />
-  </template>
-</LightOrDark> -->
-
 <Pagination classNames="text-gray-300" />
 
 ---
