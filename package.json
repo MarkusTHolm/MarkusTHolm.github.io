@@ -1,5 +1,5 @@
 {
   "devDependencies": {
-    "playwright-chromium": "^1.45.1"
+    "playwright-chromium": "^1.45.3"
   }
 }
