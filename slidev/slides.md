@@ -22,6 +22,7 @@ title: "ICTAM 2024"
 titleTemplate: '%s • Markus Tandrup Holm'
 
 mdc: true 
+zoom: 0.8
 
 layout: cover
 ---
@@ -31,13 +32,20 @@ layout: cover
 </head>
 
 
-<h2> Maximizing Failure Resistance of Periodic and Aperiodic Architected Materials </h2>
+<h1> Maximizing Failure Resistance of Architected Materials </h1>
 
-<h4><u> Markus Tandrup Holm </u>, Konstantinos Poulios, Niels Aage and Ole Sigmund </h4>
+<h4><u> Markus Tandrup Holm</u>, Konstantinos Poulios, Niels Aage and Ole Sigmund </h4>
 
 <h5> Department of Civil and Mechanical Engineering, Solid Mechanics, Technical University of Denmark</h5>
 
-<p> ICTAM 2024 </p>
+<p> </p> 
+
+<h3> ICTAM 2024 </h3>
+
+<img style="position:fixed; top:50px; left:50px; width:80px;" src="/media/DTU/DTU_logo_white.png" v-bind="props" />
+
+<img style="position:fixed; top:100px; right:50px; width:400px;" src="/media/DTU/Villum_white.png" v-bind="props" />
+
 
 
 ---
