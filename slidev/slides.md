@@ -25,6 +25,7 @@ mdc: true
 zoom: 0.8
 
 layout: cover
+# transition: fade-out
 ---
 
 <head>

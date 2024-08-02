@@ -1,0 +1,42 @@
+--->
+
+<p> </p>
+
+- What is the best formulation of the objective function
+
+
+
+
+# Architected materials
+
+- What: Lattice structures (img)
+- Goal: Obtain light structures while retaining performance in terms of stiffness, strength, 
+- Can be tailored for the specific need 
+- Enabled by advances in additive manufacturing (3D printing) of metal alloys and polymers
+- However, still an active research area in terms of both design and especially manufacturing (avoiding severe defects and large tolerances)
+- Defect free design is probably impossible, so the optimal design must be tolerant/robust to crack propagation. 
+
+
+1. (Add example image of printed structures)
+2. (Add example image of Ashby? chart, density and stifness, and density and e.g. fracture toughness or energy absorbtion)
+3. (Add cool video of laser sintering (or whatever it is called))
+
+
+# Failure resistance
+
+- Cracks will occur or is already present from manufacturing technology (sintering, laser welding). So how do we handle them?
+
+- Defining the objective (what is the goal?): 
+
+- Energy absorbtion (total fracture property), can be viewed as the 'average' resistance against cracks
+- Fracture toughness (instantanous property, defines strength in cases where buckling is not considered but is also local in time, i.e. it does not account for what happens next). How is it defined absolute or relative?
+
+- Optimality only exists under some objective, so this is key. However, many conceptions can be found regarding what is actually the desired property. This leads to confusion and the risk that designs are selected for the wrong reason.
+
+- Some objectives are easy to define (Stiffness maximization), failure resistance is NOT. So we must choose the objective carefully
+
+
+
+add notes here
+
+-->
