@@ -17,14 +17,26 @@ layout: two-cols-header
 ## Architected materials - Applications
 <p> </p>
 
+- Aerospace, 
+- Enabled by additive manufacturing
+- Polymers and metals
 
-- Add pictures of architected materials in use (Carbon (polymer) + Metal print)
-- Motivation: Lightweighting and tailored properties, and perhaps even better
+<img src="/media/MetalAm/ssm-slm-inconel-sparrow.png" style="position:fixed; bottom:80px; left:-10px; width:425px"/>
+<p style="position:relative; top:0px; left:10px; text-align:left; font-weight: lighter"> <sup>1)</sup> </p>  
+
+<img src="/media/MetalAm/part1.png" style="position:fixed; bottom:100px; left:400px; width:650px"/>
+<p style="position:relative; top:0px; left:10px; text-align:left; font-weight: lighter"> <sup>1)</sup> </p>  
+
+<img src="/media/MetalAm/part2.png" style="position:fixed; bottom:300px; left:550px; width:400px"/>
+<p style="position:relative; top:0px; left:10px; text-align:left; font-weight: lighter"> <sup>1)</sup> </p>  
+
+<img src="/media/MetalAm/part3.png" style="position:fixed; bottom:85px; left:180px; width:600px"/>
+<p style="position:relative; top:0px; left:10px; text-align:left; font-weight: lighter"> <sup>1)</sup> </p>  
 
 <img src="/media/Carbon/addidas.png" style="position:fixed; bottom:10px; right:300px; width:250px"/>
 <p style="position:relative; top:0px; left:10px; text-align:left; font-weight: lighter"> <sup>1)</sup> </p>  
 
-<img src="/media/Carbon/riddel_helmet.png" style="position:fixed; bottom:50px; right:20px; width:300px"/>
+<img src="/media/Carbon/riddel_helmet.png" style="position:fixed; bottom:50px; right:20px; width:250px"/>
 <p style="position:relative; top:0px; left:10px; text-align:left; font-weight: lighter"> <sup>2)</sup> </p>  
 
 
@@ -34,8 +46,8 @@ layout: two-cols-header
 </Footnotes> 
 
 <!-- 
+- Motivation: Lightweighting and tailored properties, and perhaps even better
 
-- Add pictures of architected materials defects in metal printing
 - Motivate why fracture properties are important 
 
 -->
@@ -70,14 +82,37 @@ layout: two-cols-header
 
 
 ---
+layout: two-cols-header
+---
+
 
 ## Methods - Modelling approach
 
 <p> </p>
 
-- Timoshenko beam elements (low densitities $\bar{\rho} < 0.2$)
-- Modelling domain: 2D domain -> 2D materials (for now)
-- Uniaxial tension (multipoint constraints)
+::left::
+
+
+- Modelling domain $\rightarrow$ 2D materials (for now)
+- Load controlled uniaxial tension with multipoint constraints
+- Timoshenko beam elements $(\bar{\rho} < 0.2):$
+
+<img src="/media/figures/beamElement.png" style="position:relative; width:300px; bottom:-50px; right:-50px"/>
+
+
+::right::
+
+
+<div v-click.hide> 
+
+<img src="/media/figures/domain.png" style="position:fixed; width:400px; bottom:50px; right:50px"/>
+
+</div v-click> 
+
+<div v-after> 
+<img src="/media/figures/ele_ID.png" style="position:fixed; width:407px; bottom:58px; right:45px"/>
+</div v-after> 
+
 
 ---
 layout: two-cols-header
@@ -343,7 +378,7 @@ Triangular: $\lambda = 1.29 \hspace{125pt}$ Kagome: $\lambda = 1.37$.
 </div>
 
 
-<div v-click>
+<div v-after>
 
 <img src="/media/MeshSens/serendipity_fine.jpeg" style="position:fixed; width:580px; bottom:0px; left:200px"/>
 
