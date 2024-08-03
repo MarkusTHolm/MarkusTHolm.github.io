@@ -1,6 +1,6 @@
 ---
 theme: academic
-coverAuthor: MTAHO
+coverAuthor: mtaho@dtu.dk
 # coverBackgroundUrl: https://images.unsplash.com/photo-1607799279861-4dd421887fb3
 # coverBackgroundSource: unsplash
 # coverBackgroundSourceUrl: https://unsplash.com/photos/8qEB0fTe9Vw
@@ -25,7 +25,7 @@ mdc: true
 zoom: 0.8
 
 layout: cover
-# transition: fade-out
+transition: fade-out
 ---
 
 <head>
@@ -47,6 +47,15 @@ layout: cover
 
 <img style="position:fixed; top:100px; right:50px; width:400px;" src="/media/DTU/Villum_white.png" v-bind="props" />
 
+<!-- 
+
+- Optimization framework for 2D lattices
+- Topology optimization
+  - Inverse design method
+  - Gradient based 
+- What is the goal?
+
+ -->
 
 
 ---

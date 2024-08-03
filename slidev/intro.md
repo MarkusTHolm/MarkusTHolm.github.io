@@ -1,48 +1,71 @@
----
-layout: two-cols-header
----
-
-## Optimization framework for 2D lattice materials
-<p> </p>
-
-- Topology optimization
-  - Inverse design method
-  - Gradient based 
-- What is the goal?
-
-
-
----
 
 ## Architected materials - Applications
 <p> </p>
 
-- Aerospace, 
+
 - Enabled by additive manufacturing
-- Polymers and metals
+- Metals and polymer
 
-<img src="/media/MetalAm/ssm-slm-inconel-sparrow.png" style="position:fixed; bottom:80px; left:-10px; width:425px"/>
-<p style="position:relative; top:0px; left:10px; text-align:left; font-weight: lighter"> <sup>1)</sup> </p>  
+<div v-click="1">
 
-<img src="/media/MetalAm/part1.png" style="position:fixed; bottom:100px; left:400px; width:650px"/>
-<p style="position:relative; top:0px; left:10px; text-align:left; font-weight: lighter"> <sup>1)</sup> </p>  
+- <span v-mark.orange.v-mark="1"> Aerospace, </span> <span v-mark.orange.v-mark="2"> orthopedic implants, </span> <span v-mark.orange.v-mark="3"> sporting gear </span>, etc.
 
-<img src="/media/MetalAm/part2.png" style="position:fixed; bottom:300px; left:550px; width:400px"/>
-<p style="position:relative; top:0px; left:10px; text-align:left; font-weight: lighter"> <sup>1)</sup> </p>  
+</div v-click>
 
-<img src="/media/MetalAm/part3.png" style="position:fixed; bottom:85px; left:180px; width:600px"/>
-<p style="position:relative; top:0px; left:10px; text-align:left; font-weight: lighter"> <sup>1)</sup> </p>  
+<div v-click="4">
 
-<img src="/media/Carbon/addidas.png" style="position:fixed; bottom:10px; right:300px; width:250px"/>
-<p style="position:relative; top:0px; left:10px; text-align:left; font-weight: lighter"> <sup>1)</sup> </p>  
+- Active research field
 
-<img src="/media/Carbon/riddel_helmet.png" style="position:fixed; bottom:50px; right:20px; width:250px"/>
-<p style="position:relative; top:0px; left:10px; text-align:left; font-weight: lighter"> <sup>2)</sup> </p>  
+</div v-click>
 
+<div v-click="1">
+<img src="/media/MetalAm/ssm-slm-inconel-sparrow.png" style="position:fixed; bottom:80px; left:-40px; width:325px"/>
+<p style="position:fixed; bottom:50px; left:40px; text-align:left; font-weight: lighter"> <sup>1)</sup> </p> 
+</div v-click>
+
+<div v-click="1"> 
+<img src="/media/MetalAm/ESAbracket.png" style="position:fixed; bottom:90px; right:350px; width:375px"/>
+<p style="position:fixed; bottom:100px; right:615px; text-align:left; font-weight: lighter"> <sup>2)</sup> </p>  
+</div v-click> 
+
+<div v-click="2">
+<img src="/media/MetalAm/part1.png" style="position:fixed; bottom:100px; left:590px; width:800px"/>
+<p style="position:fixed; top:215px; left:685px; text-align:left; font-weight: lighter"> <sup>3)</sup> </p>   
+
+<img src="/media/MetalAm/part2.png" style="position:fixed; bottom:290px; left:680px; width:200px"/>
+
+<img src="/media/MetalAm/part3.png" style="position:fixed; bottom:95px; left:270px; width:600px"/>
+</div v-click>
+
+<div v-click="3">
+<img src="/media/Carbon/addidas.png" style="position:fixed; bottom:0px; right:270px; width:250px"/>
+<p style="position:fixed; bottom:40px; right:515px; text-align:left; font-weight: lighter"> <sup>4)</sup> </p>  
+
+<img src="/media/Carbon/riddel_helmet.png" style="position:fixed; bottom:20px; right:20px; width:250px"/>
+<p style="position:fixed; bottom:40px; right:250px; text-align:left; font-weight: lighter"> <sup>5)</sup> </p>
+</div v-click>
 
 <Footnotes separator>
-  <Footnote :number=1> Carbon - Adidas </Footnote>
-  <Footnote :number=2> Carbon - Riddel </Footnote>
+  <div v-click="1">
+  <Footnote :number=1> all3dp.com </Footnote>
+  </div v-click>
+
+  <div v-click="1">
+  <Footnote :number=2> jawstec.com </Footnote>
+  </div v-click>
+
+  <div v-click="2">
+  <Footnote :number=3> Solar Orbiter Sun Sensor Bracket (ESA) </Footnote>
+  </div v-click>
+
+  <div v-click="3">
+  <Footnote :number=4> Carbon - Adidas </Footnote>
+  </div v-click>
+
+  <div v-click="3">
+  <Footnote :number=5> Carbon - Riddel </Footnote>
+  </div v-click>
+
 </Footnotes> 
 
 <!-- 
@@ -94,7 +117,7 @@ layout: two-cols-header
 
 
 - Modelling domain $\rightarrow$ 2D materials (for now)
-- Load controlled uniaxial tension with multipoint constraints
+- Load controlled uniaxial tension with multi-point constraints
 - Timoshenko beam elements $(\bar{\rho} < 0.2):$
 
 <img src="/media/figures/beamElement.png" style="position:relative; width:300px; bottom:-50px; right:-50px"/>
@@ -213,14 +236,14 @@ where
 
 <figure style="position:relative; top: -70px; left:95px; display: table" >
   <SlidevVideo muted autoreset="click" autoplay v-click=1
-  style="position:relative; top:0px; left:0px; width:400px">
+  style="position:relative; top:0px; left:0px; width:425px">
     <source src="/media/animations/straight_bars_comp.mp4" type="video/mp4">
   </SlidevVideo> 
 </figure> 
 
-<figure style="position:relative; top: -40px; left:95px; display: table" >
+<figure style="position:relative; top: -65px; left:95px; display: table" >
   <SlidevVideo muted autoreset="click" autoplay v-click=1
-  style="position:relative; top:0px; left:0px; width:400px">
+  style="position:relative; top:0px; left:0px; width:425px">
     <source src="/media/animations/kagome_compliance.mp4" type="video/mp4">
   </SlidevVideo> 
 </figure> 
@@ -239,7 +262,7 @@ layout: two-cols-header
 
 ::left::
 - Single Edge Notched Tension (SENT)
-- Prescribed load with multi point constraints
+- Prescribed load with multi-point constraints
 - Failure criterion:
  $$\sigma_{\max} = \sigma_c$$
 - Load scaling parameter:
@@ -309,7 +332,7 @@ $f_E = 1.0$
 <figure style="position:relative; top: -50px; left:95px; display: table" >
   <SlidevVideo muted autoreset="click" autoplay v-click=1
   style="position:relative; top:0px; left:0px; width:425px">
-    <source src="/home/mtaho/Code/MarkusTHolm.github.io/slidev/media/animations/triangle_UnitCell_le_0.062_vfrac_0.06_cmp.mp4" type="video/mp4">
+    <source src="/media/animations/triangle_UnitCell_le_0.062_vfrac_0.06_cmp.mp4" type="video/mp4">
   </SlidevVideo> 
 </figure> 
 
@@ -322,7 +345,7 @@ $f_E = 1.0$
 
 <p> </p>
 
-- $\bar{\rho} = 0.0625$, and remember $\lambda \propto K_{\text{Ic}}$
+- <span v-mark.orange> $\bar{\rho} = 0.0625$ </span>, and remember $\lambda \propto K_{\text{Ic}}$
 
 <img src="/media/plots/structure_comp_1.png" style="position:fixed; width:500px; bottom:20px; right:50px"/>
 
