@@ -4,7 +4,7 @@
 
 
 - Enabled by additive manufacturing
-- Metals and polymer
+- Metals and polymers
 
 <div v-click="1">
 
@@ -256,14 +256,14 @@ where
 layout: two-cols-header
 ---
 
-## Methods - Test case
+## Methods - Fracture toughness test case
 
 <p> </p>
 
 ::left::
 - Single Edge Notched Tension (SENT)
 - Prescribed load with multi-point constraints
-- Failure criterion:
+- Failure criterion (brittle fracture):
  $$\sigma_{\max} = \sigma_c$$
 - Load scaling parameter:
 
@@ -341,7 +341,7 @@ $f_E = 1.0$
 
 ---
 
-## Results - Stress/fracture optimization
+## Results - Fracture toughness maximization
 
 <p> </p>
 
