@@ -68,6 +68,9 @@
 
 </Footnotes> 
 
+
+<img style="position:fixed; top:10px; right:50px; width:200px;" src="/media/DTU/Villum_white.png" v-bind="props" />
+
 <!-- 
 - Motivation: Lightweighting and tailored properties, and perhaps even better
 
@@ -86,23 +89,24 @@
 <div class="grid grid-cols-2 gap-4">
   <div>
     Tailor stiffness 
-    <img src="/media/ashby/g24.png" style="width:600px"/>
+    <img src="/media/ashby/g24_3.png" style="width:600px"/>
     <p style="position:relative; top:-35px; left:10px; text-align:left; font-weight: lighter"> <sup>1)</sup> </p>  
   </div>
   
   <div>
     Tailor, and improve fracture toughness?
-    <img src="/media/ashby/image1-5.png" style="width:360px"/>
+    <img src="/media/ashby/image1-5.png" style="width:385px"/>
     <p style="position:relative; top:-35px; left:10px; text-align:left; font-weight: lighter"> <sup>2)</sup> </p>  
   </div>
 
 </div>
 
 <Footnotes separator>
-  <Footnote :number=1> Inspired by Tanksala 2015 </Footnote>
-  <Footnote :number=2> Jenett 2017 </Footnote>
+  <Footnote :number=1> Jenett et al. (2017) </Footnote>
+  <Footnote :number=2> Inspired by Tankasala et al. (2015) </Footnote>
 </Footnotes> 
 
+<img style="position:fixed; top:10px; right:50px; width:200px;" src="/media/DTU/Villum_white.png" v-bind="props" />
 
 ---
 layout: two-cols-header
@@ -125,17 +129,10 @@ layout: two-cols-header
 
 ::right::
 
-
-<div v-click.hide> 
-
 <img src="/media/figures/domain.png" style="position:fixed; width:400px; bottom:50px; right:50px"/>
 
-</div v-click> 
 
-<div v-after> 
-<img src="/media/figures/ele_ID.png" style="position:fixed; width:407px; bottom:58px; right:45px"/>
-</div v-after> 
-
+<img style="position:fixed; top:10px; right:50px; width:200px;" src="/media/DTU/Villum_white.png" v-bind="props" />
 
 ---
 layout: two-cols-header
@@ -200,9 +197,10 @@ $$
   <Footnote :number=1> Vigliotti and Pasini (2015) </Footnote>
 </Footnotes> 
 
+<img style="position:fixed; top:10px; right:50px; width:200px;" src="/media/DTU/Villum_white.png" v-bind="props" />
+
 ---
 layout: two-cols-header
-zoom: 0.85
 ---
 
 ## Methods - Stiffness maximization
@@ -226,8 +224,7 @@ $$
 
 $$ \mathbf{K}(\mathbf{x}) = \sum_{e=1}^{N_e} \rho_e(x_e)^{q_k} \mathbf{K}_e^0 $$
 
-where
-- $\rho_e = \rho_{\min} + x_e(1 - \rho_{\min}) \hspace{8mm} \text{Relative element density}$
+- Rel. element density: $\rho_e = \rho_{\min} + x_e(1 - \rho_{\min}) \hspace{2mm}$
 
 
 ::right::
@@ -236,14 +233,14 @@ where
 
 <figure style="position:relative; top: -70px; left:95px; display: table" >
   <SlidevVideo muted autoreset="click" autoplay v-click=1
-  style="position:relative; top:0px; left:0px; width:425px">
+  style="position:relative; top:0px; left:0px; width:350px">
     <source src="/media/animations/straight_bars_comp.mp4" type="video/mp4">
   </SlidevVideo> 
 </figure> 
 
 <figure style="position:relative; top: -65px; left:95px; display: table" >
   <SlidevVideo muted autoreset="click" autoplay v-click=1
-  style="position:relative; top:0px; left:0px; width:425px">
+  style="position:relative; top:0px; left:0px; width:350px">
     <source src="/media/animations/kagome_compliance.mp4" type="video/mp4">
   </SlidevVideo> 
 </figure> 
@@ -251,6 +248,8 @@ where
 </v-clicks>
 
 - Show structures with and without isotropy constraints
+
+<img style="position:fixed; top:10px; right:50px; width:200px;" src="/media/DTU/Villum_white.png" v-bind="props" />
 
 ---
 layout: two-cols-header
@@ -265,7 +264,7 @@ layout: two-cols-header
 - Prescribed load with multi-point constraints
 - Failure criterion (brittle fracture):
  $$\sigma_{\max} = \sigma_c$$
-- Load scaling parameter:
+- Load scaling factor:
 
 $$\lambda = \frac{\sigma_c}{\sigma_{\max}} $$
 
@@ -278,9 +277,10 @@ $$ K_{\text{Ic}} = \sigma_f \sqrt{\pi a} \ f(a/W) $$
 
 <img src="/media/figures/SENT.png" style="position:relative; width:250px; bottom:0px; left:80px"/>
 
+<img style="position:fixed; top:10px; right:50px; width:200px;" src="/media/DTU/Villum_white.png" v-bind="props" />
+
 ---
 layout: two-cols-header
-zoom: 0.85
 ---
 
 # Methods - Fracture toughness maximization
@@ -295,7 +295,8 @@ $$
 \max_{\mathbf{x}\in \mathbb{R}^{N_e}} \quad & \lambda(\mathbf{x}) = \frac{\sigma_c}{\sigma_{\max}(\mathbf{x})} && \text{Load scaling factor}\\[2pt]
 \text{s.t.}       \quad & \mathbf{K}(\mathbf{x}) \mathbf{u}(\mathbf{x}) = \mathbf{f}, && \text{Static equilibrium} \\[2pt]
                   \quad & g_{iso}(\mathbf{C}^H_{UC}(\mathbf{x})) \leq 0, && \text{Isotropic unit cell} \\[2pt]
-                  \quad & g_{stiff}(\mathbf{C}^H_{UC}(\mathbf{x})) \leq 0, && \text{Unit cell stiffness} \\[2pt]
+                  \quad & g_{stiff}(\mathbf{C}^H_{UC}(\mathbf{x})) \leq 0, && 
+                  \text{Unit cell stiffness} \\[2pt]
                   \quad & \frac{V(\mathbf{x})}{V_0 \, f_V} - 1 \leq 0, && \text{Volume constraint}  \\[2pt]
                   \quad & \mathbf{0} \leq \mathbf{x}  \leq  \mathbf{1}
 \end{align*}
@@ -304,13 +305,9 @@ $$
 
 <div v-click> 
 
-- Unit cell stiffness constraint:
-
-$$ g_{stiff}(\mathbf{C}^H_{UC}(\mathbf{x})) = 1 - \frac{E^H_{uc}}{E_{tri}^H \, f_E} $$
-
-where
-- $E_{tri}^H = \frac{1}{3}E_s w \bar{\rho}_{uc} \hspace{8mm} \text{Homogenized triangular stiffness}$
-- $f_e \hspace{28.5mm} \text{Stiffness fraction}$
+$$g_{stiff}(\mathbf{C}^H_{UC}(\mathbf{x})) = 1 - \frac{E^H_{uc}(\mathbf{x})}{E_{tri}^H \, f_E}$$  
+- $E_{tri}^H = \frac{1}{3}E_s w \bar{\rho}_{uc} \hspace{8mm} \text{Hom. triangular E-mod.}$
+- $f_E \hspace{27.5mm} \text{Young's modulus fraction}$
 
 </div v-click> 
 
@@ -325,19 +322,20 @@ where
 </div v-click> 
 
 
-<v-click> 
+<v-clicks> 
 
-$f_E = 1.0$ 
+$\ f_E = 1.0$ 
 
 <figure style="position:relative; top: -50px; left:95px; display: table" >
   <SlidevVideo muted autoreset="click" autoplay v-click=1
-  style="position:relative; top:0px; left:0px; width:425px">
+  style="position:relative; top:0px; left:0px; width:350px">
     <source src="/media/animations/triangle_UnitCell_le_0.062_vfrac_0.06_cmp.mp4" type="video/mp4">
   </SlidevVideo> 
 </figure> 
 
-</v-click>
+</v-clicks>
 
+<img style="position:fixed; top:10px; right:50px; width:200px;" src="/media/DTU/Villum_white.png" v-bind="props" />
 
 ---
 
@@ -375,6 +373,8 @@ $f_E = 1.0$
 
 </v-clicks>
 
+<img style="position:fixed; top:10px; right:50px; width:200px;" src="/media/DTU/Villum_white.png" v-bind="props" />
+
 
 ---
 layout: two-cols-header
@@ -384,7 +384,7 @@ layout: two-cols-header
 
 <p> </p>
 
-Triangular: $\lambda = 1.29 \hspace{125pt}$ Kagome: $\lambda = 1.37$.
+Triangular: $\lambda = 1.29 \hspace{125pt}$ Kagome: $\lambda = 1.37$
 
 
 <div v-click.hide>
@@ -405,6 +405,8 @@ Triangular: $\lambda = 1.29 \hspace{125pt}$ Kagome: $\lambda = 1.37$.
 
 <img src="/media/MeshSens/serendipity_fine.jpeg" style="position:fixed; width:580px; bottom:0px; left:200px"/>
 
-$\lambda = 1.67$
+$\quad \Large \lambda = 1.67$
 
 </div>
+
+<img style="position:fixed; top:10px; right:50px; width:200px;" src="/media/DTU/Villum_white.png" v-bind="props" />
