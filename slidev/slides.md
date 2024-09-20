@@ -1,63 +1,69 @@
 ---
-theme: academic
-coverAuthor: mtaho@dtu.dk
-# coverBackgroundUrl: https://images.unsplash.com/photo-1607799279861-4dd421887fb3
-# coverBackgroundSource: unsplash
-# coverBackgroundSourceUrl: https://unsplash.com/photos/8qEB0fTe9Vw
-coverDate: 26/08/2024
-exportFilename: dev-environment-as-code
-themeConfig:
-  paginationX: r
-  paginationY: t
-  paginationPagesDisabled: [1]
-fonts:
-  sans: Neo Sans Pro
-hideInToc: true
-info: |
-  <h2>ICTAM 2024</h2>
-  <h5 class="font-light">Markus T. Holm</h5>
-lineNumbers: true
+background: '#b49777'
+# # theme: default
+# #coverAuthor: mtaho@dtu.dk
+# # coverBackgroundUrl: https://images.unsplash.com/photo-1607799279861-4dd421887fb3
+# # coverBackgroundSource: unsplash
+# # coverBackgroundSourceUrl: https://unsplash.com/photos/8qEB0fTe9Vw
+# coverDate: 08/09/2024
+# exportFilename: dev-environment-as-code
+# themeConfig:
+#   paginationX: r
+#   paginationY: t
+#   paginationPagesDisabled: [1]
+# fonts:
+#   sans: Times New Roman
+# hideInToc: true
+# lineNumbers: true
 
-title: "ICTAM 2024"
-titleTemplate: '%s • Markus Tandrup Holm'
+# title: "Bryllup N&M"
+# titleTemplate: '%s • 12/07/2025'
 
-mdc: true 
-zoom: 0.8
+# mdc: true 
+zoom: 0.6
 
-layout: cover
+# # layout: cover
 transition: fade-out
 ---
 
-<head>
-  <link rel="stylesheet" href="styles.css">
-</head>
 
-
-<h1> Maximizing Failure Resistance of Architected Materials </h1>
-
-<h4><u> Markus Tandrup Holm</u>, Konstantinos Poulios, Niels Aage and Ole Sigmund </h4>
-
-<h5> Department of Civil and Mechanical Engineering, Solid Mechanics, Technical University of Denmark</h5>
-
-<p> </p> 
-
-<h3> ICTAM 2024 </h3>
-
-<img style="position:fixed; top:50px; left:50px; width:80px;" src="/media/DTU/DTU_logo_white.png" v-bind="props" />
-
-<img style="position:fixed; top:100px; right:50px; width:400px;" src="/media/DTU/Villum_white.png" v-bind="props" />
-
-<!-- 
-
-- Optimization framework for 2D lattices
-- Topology optimization
-  - Inverse design method
-  - Gradient based 
-- What is the goal?
-
- -->
+<figure style="position:relative; top: -70px; left:50px; display: table" >
+  <SlidevVideo muted autoreset="click" autoplay
+  style="position:relative; top:60px; left:-55px; width:2500px">
+    <source src="/media/bryllup/SaveTheDate.mp4" type="video/mp4">
+  </SlidevVideo> 
+</figure>
 
 
 ---
-src: ./intro.md
+layout: center
+background: '#b49777'
+class: text-black
 ---
+
+<img src="/media/SaveTheDate_detaljer/Slide1.png" style="position:fixed; top:0px; right:0px; width:1000px"/>
+
+
+---
+
+<img src="/media/SaveTheDate_detaljer/Slide2.png" style="position:fixed; top:0px; right:0px; width:1000px"/>
+
+---
+
+<img src="/media/SaveTheDate_detaljer/Slide3.png" style="position:fixed; top:0px; right:0px; width:1000px"/>
+
+---
+
+<img src="/media/SaveTheDate_detaljer/Slide4.png" style="position:fixed; top:0px; right:0px; width:1000px"/>
+
+---
+
+<img src="/media/SaveTheDate_detaljer/Slide5.png" style="position:fixed; top:0px; right:0px; width:1000px"/>
+
+<p style="position:fixed; bottom:0px; right:25px; color:white"> <a href="https://forms.gle/2BYs5tkdYTN3gx7s6" target="https://forms.gle/2BYs5tkdYTN3gx7s6">Scan QR eller klik her for tilmelding</a>
+ </p>
+
+---
+
+<img src="/media/SaveTheDate_detaljer/Slide6.png" style="position:fixed; top:0px; right:0px; width:1000px"/>
+
