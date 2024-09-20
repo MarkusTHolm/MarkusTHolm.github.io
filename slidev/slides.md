@@ -16,8 +16,8 @@ background: '#b49777'
 # hideInToc: true
 # lineNumbers: true
 
-# title: "Bryllup N&M"
-# titleTemplate: '%s • 12/07/2025'
+title: "Bryllup N&M"
+titleTemplate: '%s • 12/07/2025'
 
 # mdc: true 
 zoom: 0.6
