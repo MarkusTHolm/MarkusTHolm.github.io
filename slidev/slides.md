@@ -26,44 +26,39 @@ zoom: 0.6
 transition: fade-out
 ---
 
-
-<figure style="position:relative; top: -70px; left:50px; display: table" >
-  <SlidevVideo muted autoreset="click" autoplay
-  style="position:relative; top:60px; left:-55px; width:2500px">
-    <source src="/media/bryllup/SaveTheDate.mp4" type="video/mp4">
-  </SlidevVideo> 
-</figure>
-
-
----
-layout: center
-background: '#b49777'
-class: text-black
----
-
-<img src="/media/SaveTheDate_detaljer/Slide1.png" style="position:fixed; top:0px; right:0px; width:1000px"/>
-
+<img src="/media/Website_opdateret/Slide1.png" style="position:fixed; top:0px; right:0px; width:5000px"/>
 
 ---
 
-<img src="/media/SaveTheDate_detaljer/Slide2.png" style="position:fixed; top:0px; right:0px; width:1000px"/>
+<img src="/media/Website_opdateret/Slide2.png" style="position:fixed; top:0px; right:0px; width:1000px"/>
 
----
+<p style="position:fixed; bottom:40px; left:700px; font-family: 'GFS Didot'; color:white; font-size:25px"> Scan QR kode eller 
+ </p>
 
-<img src="/media/SaveTheDate_detaljer/Slide3.png" style="position:fixed; top:0px; right:0px; width:1000px"/>
-
----
-
-<img src="/media/SaveTheDate_detaljer/Slide4.png" style="position:fixed; top:0px; right:0px; width:1000px"/>
-
----
-
-<img src="/media/SaveTheDate_detaljer/Slide5.png" style="position:fixed; top:0px; right:0px; width:1000px"/>
-
-<p style="position:fixed; bottom:0px; right:25px; color:white"> <a href="https://forms.gle/2BYs5tkdYTN3gx7s6" target="https://forms.gle/2BYs5tkdYTN3gx7s6">Scan QR eller klik her for tilmelding</a>
+<p style="position:fixed; bottom:10px; left:700px; color:white; font-family: 'GFS Didot'; font-size:25px"> <a href="https://forms.gle/2BYs5tkdYTN3gx7s6" target="https://forms.gle/2BYs5tkdYTN3gx7s6">Klik her for tilmelding</a>
  </p>
 
 ---
 
-<img src="/media/SaveTheDate_detaljer/Slide6.png" style="position:fixed; top:0px; right:0px; width:1000px"/>
+<img src="/media/Website_opdateret/Slide3.png" style="position:fixed; top:0px; right:0px; width:1000px"/>
+
+---
+
+<img src="/media/Website_opdateret/Slide4.png" style="position:fixed; top:0px; right:0px; width:1000px"/>
+
+---
+
+<img src="/media/Website_opdateret/Slide5.png" style="position:fixed; top:0px; right:0px; width:1000px"/>
+
+---
+
+<img src="/media/Website_opdateret/Slide6.png" style="position:fixed; top:0px; right:0px; width:1000px"/>
+
+---
+
+<img src="/media/Website_opdateret/Slide7.png" style="position:fixed; top:0px; right:0px; width:1000px"/>
+
+---
+
+<img src="/media/Website_opdateret/Slide8.png" style="position:fixed; top:0px; right:0px; width:1000px"/>
 
